@@ -1,0 +1,285 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+:root {
+    --text: #1A2130;
+    --bg-primary: #C0C78C;
+    --bg-secondary: #FEFAE0
+  }
+
+
+
+/* index/homepage Start */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    background-color: var(--bg-primary);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.5); /* Warna transparan */
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+    background-color: var(--bg-primary);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+   width: 300px;
+   height: 300px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #B99470;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px 2px #B99470;
+}
+
+/* Special Dish Section */
+.special-dish {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--bg-secondary);
+}
+
+.special-dish h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.special-dish p {
+margin-bottom: 20px;
+}
+
+.dish-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish-item {
+    max-width: 200px;
+}
+
+.dish-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.dish-item h3 {
+    font-size: 20px;
+}
+
+.history {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--bg-primary);
+}
+
+.history p {
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: 16px;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.history h2 {
+    font-size: 30px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px ;
+    color: #333;
+    background-color: #eaeaea;
+}
+
+/* index/homepage Start */
+
+/* card */
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+.card {
+    border-radius: 20px;
+    width: 800px; /* Adjust width as needed */
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.photo-item {
+    flex: 1;
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.photo-text {
+    padding: 5px;
+    text-align: center;
+}
+
+.photo-text h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.photo-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* card end */
+
+/* Menu Start */
+
+
+.container-menu {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--bg-primary);
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 60px;
+    padding: 20px;
+    width: 150 px; /* 5 cards per row */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s;
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-card h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.menu-card p.price {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.menu-card a.button {
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-card a.button:hover {
+    background-color: #007BB5;
+}
+
+/* Menu End */
