@@ -54,7 +54,7 @@ css
     padding: 40px 0;
     text-align: center;
     height: 100vh;
-    background-image: url('/src/landing/ketupat-resize-sharpen-50.svg');
+    background-image: url('./src/landing/ketupat-resize-sharpen-50.svg');
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: -100px 0;
@@ -73,7 +73,7 @@ css
 
 #hero::before {
     content:'';
-    background-image: url('/src/landing/tauge3.svg');
+    background-image: url('./src/landing/tauge3.svg');
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: 40px 0;
